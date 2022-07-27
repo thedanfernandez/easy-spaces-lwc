@@ -71,7 +71,7 @@ public inherited sharing class CustomerServices {
          * @param customer - customer object
          * @return `Boolean` true if valid, false if not
          */
-        private bool isValid(Customer customer) {
+        private Boolean isValid(Customer customer) {
         }
     }
 }
