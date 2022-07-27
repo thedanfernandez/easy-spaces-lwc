@@ -66,5 +66,23 @@ public inherited sharing class CustomerServices {
             if (String.isNotEmpty(custId))
                 this.Id = custId;
         }
+
+        private bool isNameValid(String email) {
+            if (String.isEmpty(email)) {
+                return false;
+            }
+            if (email.length() < 2) {
+                return false;
+            }
+            return true;
+        }
+
+        private bool listCustomers(List<customers> customerList) {
+            for (Customer c : customerList) {
+                if (String.isEmpty(c.email)) {
+                    System.debug('empty email');
+                }
+            }
+        }
     }
 }
