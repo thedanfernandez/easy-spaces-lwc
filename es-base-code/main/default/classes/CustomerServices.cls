@@ -67,22 +67,11 @@ public inherited sharing class CustomerServices {
                 this.Id = custId;
         }
 
-        private bool isNameValid(String email) {
-            if (String.isEmpty(email)) {
-                return false;
-            }
-            if (email.length() < 2) {
-                return false;
-            }
-            return true;
-        }
-
-        private bool listCustomers(List<customers> customerList) {
-            for (Customer c : customerList) {
-                if (String.isEmpty(c.email)) {
-                    System.debug('empty email');
-                }
-            }
+        /**
+         * @param customer - customer object
+         * @return `Boolean` true if valid, false if not
+         */
+        private bool isValid(Customer customer) {
         }
     }
 }
