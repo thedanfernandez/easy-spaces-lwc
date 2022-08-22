@@ -10,10 +10,10 @@ export default class CustomerDetailForm extends LightningElement {
     msgForUser;
 
     connectedCallback() {
-        this.getDetailFields();
+        this.getDetail();
     }
 
-    getDetailFields() {
+    getDetail() {
         if (this.sobjecttype) {
             getCustomerFields({ objectType: this.sobjecttype })
                 .then((result) => {

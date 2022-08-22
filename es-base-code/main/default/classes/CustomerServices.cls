@@ -72,6 +72,10 @@ public inherited sharing class CustomerServices {
          * @return `Boolean` true if valid, false if not
          */
         private Boolean isValid(Customer customer) {
+            if (customer != null) {
+                return true;
+            }
+            return false;
         }
     }
 }
